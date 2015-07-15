@@ -153,3 +153,13 @@ snippet %$
 # Unload package
 snippet unload
 	detach('package:${1}', unload = TRUE)
+
+# devtools functions
+snippet devcreate
+	devtools::create("${1}")
+
+snippet devload
+	devtools::load_all()
+
+snippet devdoc
+	devtools::document()
