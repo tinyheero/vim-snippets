@@ -1,6 +1,7 @@
 snippet #!
 	#!/usr/bin/env Rscript
 
+
 # includes
 snippet lib
 	library(${0:package})
@@ -140,9 +141,15 @@ snippet #'r
 snippet %>
 	%>%
 		${1}
+
 snippet %<
 	%<>%
 		${1}
+
 snippet %$
 	%$%
 		${1}
+
+# Unload package
+snippet unload
+	detach('package:${1}', unload = TRUE)
